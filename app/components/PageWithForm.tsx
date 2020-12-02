@@ -17,7 +17,7 @@
 	Puno srece ;-)
 */
 import React, { useState } from 'react';
-import {Form, FormContext, FormInput} from './Form';
+import {Form, FormInput} from './Form';
 
 export const PageWithForm = () => {
 	// Example
@@ -33,16 +33,14 @@ export const PageWithForm = () => {
 
 	return (
 		<div>
-			<FormContext note="Ovo je opcionalan wrapper">
-				<Form initialValues={userInfo} onSubmit={setUserInfo}>
-					<FormInput type="email" required name="email" placeHolder="your@email.com" />
-					<FormInput type="number" name="age" />
-					<FormInput type="text" required name="name" />
-					<FormInput type="text" name="phone.ext" />
-					<FormInput type="text" name="phone.number" />
-					<FormInput type="submit" value="Submit" />
-				</Form>
-			</FormContext>
+			<Form initialValues={userInfo} onSubmit={setUserInfo}>
+				<FormInput type="email" required name="email" placeHolder="your@email.com" />
+				<FormInput type="number" name="age" />
+				<FormInput type="text" required name="name" />
+				<FormInput type="text" name="phone.ext" />
+				<FormInput type="text" name="phone.number" />
+				<FormInput type="submit" value="Submit" />
+			</Form>
 		</div>
 	);
 };

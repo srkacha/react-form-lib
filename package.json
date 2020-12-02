@@ -1,0 +1,13 @@
+{
+  "name": "react-form-lib",
+  "version": "1.0.0",
+  "description": "Simple react form library",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+      "dev": "parcel index.html",
+      "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -17,7 +17,7 @@
 	Puno srece ;-)
 */
 import React, { useState } from 'react';
-import {Form, FormContext, FormInput} from './Form/Form';
+import {Form, FormContext, FormInput} from './Form';
 
 export const PageWithForm = () => {
 	// Example

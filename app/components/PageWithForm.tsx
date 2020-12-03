@@ -1,26 +1,7 @@
-/*
-	Napraviti mini-library za form submission.
-	Implementacija u pozadini treba da koristi context API i da se ne oslanja na postojece npm pakete za forme.
-	Sva logika (input[value], input[onChange], form[onSumbit]) treba da se nalazi u FormContext, Form i FormInput
-	komponentama tako da nije izlozena korisniku library-a.
-
-	State forme moze da se nalazi u FormContext ili u Form komponenti
-	Ukoliko je sva logika u Form, FormContext nije ni potreban tako da ga mozes izbaciti.
-
-	Ispod je primjer komponente koja bi koristila library na zeljeni nacin. Ukoliko ovakva struktura
-	bude u browseru rezultovala renderovanju forme koja na submit loguje userInfo objekat sa izmjenjenim vrijednostima,
-	zadatak se smatra uspjesno zavrsenim.
-
-	Koristiti React i TypeScript i parcel.
-	Pozeljno je napisati testove za library.
-
-	Puno srece ;-)
-*/
 import React, { useState } from 'react';
 import {Form, FormInput} from './Form';
 
 export const PageWithForm = () => {
-	// Example
 	const [userInfo, setUserInfo] = useState({
 		email: 'example@alea.com',
 		age: 30,
